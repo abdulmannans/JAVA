@@ -8,8 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class ApplicationController {
     @ResponseBody
     @RequestMapping("/hel")
-    String index(){
+    String index() {
         return "It Is Working";
     }
-}
 
+    @RequestMapping("/welcome")
+    public String Welcome() {
+        return "Welcomepage";
+    }
+}
