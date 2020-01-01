@@ -1,19 +1,25 @@
 package com.LoginRegistration.Api;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 public class ApplicationController {
     @ResponseBody
-    @RequestMapping("/hel")
+    @RequestMapping("/j")
     String index() {
         return "It Is Working";
     }
-
-    @RequestMapping("/welcome")
-    public String Welcome() {
-        return "Welcomepage";
+    @RequestMapping("/kopl")
+    public String i(){
+        return "k.html";
+    }
+    @RequestMapping("/k")
+    public ModelAndView home()
+    {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("k");
+        return modelAndView;
     }
 }

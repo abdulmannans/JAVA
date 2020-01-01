@@ -53,7 +53,7 @@ public class Employee {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
+                ", mail='" + email + '\'' +
                 '}';
     }
 }
