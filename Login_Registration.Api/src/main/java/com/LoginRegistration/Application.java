@@ -1,4 +1,4 @@
-package com.LoginRegistration.Api;
+package com.LoginRegistration;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
